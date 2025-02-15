@@ -32,4 +32,4 @@ graph TD;
 | **Storage & Security** | Amazon S3 (for images) + AWS KMS (encryption) |
 | **Monitoring & Alerts** | AWS CloudWatch, SNS, Lambda |
 
-Solution template refernce: https://aws.amazon.com/rekognition/identity-verification/
+Solution template: https://aws.amazon.com/rekognition/identity-verification/
