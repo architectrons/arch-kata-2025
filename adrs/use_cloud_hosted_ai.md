@@ -20,7 +20,7 @@ Certifiable, Inc. is integrating **AI-driven automation** for **grading certific
 - **Ensure Scalability & Performance** – AI processing must **support an increasing number of candidates** while maintaining **low-latency inference**.
 - **Enable Explainability & Governance** – AI grading decisions must be **auditable and explainable** to ensure fairness.
 
-To meet these requirements, **a cloud-hosted AI model with strict data privacy controls** (e.g., **AWS Bedrock, OpenAI API, Google Vertex AI**) is chosen to prevent **test cases and grading data from being leaked or stored in public LLMs**.
+To meet these requirements, **a cloud-hosted AI model with strict data privacy controls** (e.g., **Claude 3 Series, GPT-4o (o1) , Llama 3, Gemini 2, Mistral**) is chosen, accessed via **AWS Bedrock, OpenAI API, Azure OpenAI, and Google Vertex AI**. This ensures **test cases and grading data are not stored or used for public AI model training**.
 
 ---
 
@@ -35,16 +35,19 @@ To meet these requirements, **a cloud-hosted AI model with strict data privacy c
 
 ## Considered Options
 
-1. **Cloud-Hosted AI Model with Private Data Controls (AWS Bedrock, OpenAI API, Google Vertex AI) – Chosen**
-2. **Third-Party API Integration (OpenAI, Claude, Gemini, etc.)**
-3. **Hybrid Approach: Cloud AI with Local Processing for Additional Privacy Protections**
-4. **Traditional Manual Grading (Baseline Comparison)**
+1. **Cloud-Hosted AI Model with Private Data Controls (Claude 3, GPT-4o, Llama 3, Gemini 2.0, Mistral) – Chosen**  
+   - **Models Used:** **Claude 3 (Sonnet, Opus, Haiku), GPT-4o, Llama 3, Gemini 2.0, Mistral 7B**
+   - **Access via:** AWS Bedrock, OpenAI API, Azure OpenAI, Google Vertex AI  
+2. **Third-Party API Integration**  
+   - **Direct API calls to OpenAI (GPT-4 Turbo), Anthropic (Claude 3), Mistral, and Meta AI**  
+3. **Hybrid Approach: Cloud AI with Local Processing for Additional Privacy Protections**  
+4. **Traditional Manual Grading (Baseline Comparison)**  
 
 ---
 
 ## Decision Outcome
 
-### Chosen option: "Cloud-Hosted AI Model with Private Data Controls" (e.g., AWS Bedrock, OpenAI API, Google Vertex AI)
+### Chosen option: "Cloud-Hosted AI Model with Private Data Controls" (Claude 3, GPT-4o, Llama 3, Gemini 2.0, Mistral)
 
 #### Justification
 - **Ensures test content remains private and does not contribute to public AI training datasets.**
@@ -59,7 +62,7 @@ To meet these requirements, **a cloud-hosted AI model with strict data privacy c
 ### AI in Aptitude Test Grading
 
 #### ✅ Automated Short Answer Evaluation
-- **Cloud-hosted LLM (AWS Bedrock Claude Sonet, OpenAI GPT-4, Azure OpenAI)** evaluates short answers.
+- **Cloud-hosted LLM (AWS Bedrock Claude Sonet, OpenAI GPT-4o, Azure OpenAI)** evaluates short answers.
 - AI **assigns an initial score** and **provides explainable feedback**.
 - **Low-confidence cases** are flagged for **human review**.
 
