@@ -1,5 +1,5 @@
 
-# Face Recognition AI for fraud prevention
+# Face Recognition ML for fraud prevention
 
 ## Flow diagrams
 ```mermaid
@@ -25,8 +25,11 @@ graph TD;
 
 | **Component**         | **Technology Used** |
 |----------------------|--------------------|
-| **Face Recognition** | AWS Rekognition |
-| **ID Verification**  | AWS Textract |
-| **Liveness Detection** | AWS Rekognition Face Analysis |
+| **Face Recognition** | Amazon Rekognition Face Detection, Amazon Rekognition Face Comparison |
+| **ID Verification**  | Amazon Rekognition Object Detection, Amazon Rekognition Text Detection, Amazon Rekognition Custom Labels |
+| **Liveness Detection** | Amazon Rekognition Face Liveness  |
+| **Detect duplicate users** | Amazon Rekognition Face Index |
 | **Storage & Security** | Amazon S3 (for images) + AWS KMS (encryption) |
 | **Monitoring & Alerts** | AWS CloudWatch, SNS, Lambda |
+
+Solution template refernce: https://aws.amazon.com/rekognition/identity-verification/
