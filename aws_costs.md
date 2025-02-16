@@ -9,7 +9,8 @@ Beyond this surge, anticipate a steady increase of about 0.4375% per month, lead
 |---------------------------------------|-------------------------|
 | Grade short answers                   | $1,178.80                   |
 | Guardrails          | $161.60                 |
-| **Total**                             | **$1,340.40**           |
+| Face Recognition ML | $136.01 |
+| **Total**                             | **$1,476.50**           |
 
 
 ---
@@ -145,8 +146,6 @@ Beyond this surge, anticipate a steady increase of about 0.4375% per month, lead
 #### Cost Calculation:
 - **Monthly Cost:** 50 hours × $0.30/hour = **$15.00**.
 
----
-
 ## 3. AI Explainability & Compliance Guardrails
 
 ### AI Grading Audit Logs (AWS CloudTrail)
@@ -160,8 +159,6 @@ Beyond this surge, anticipate a steady increase of about 0.4375% per month, lead
 #### Cost Calculation:
 - **Monthly Cost:** (480,000 ÷ 100,000) × $2.00 = **$9.60**.
 
----
-
 # Total Estimated Monthly Guardrails Cost
 
 | **Service**                                      | **Estimated Monthly Cost (USD)** |
@@ -172,3 +169,76 @@ Beyond this surge, anticipate a steady increase of about 0.4375% per month, lead
 | Amazon SageMaker Model Monitor (Stability Check) | $15.00                           |
 | AWS CloudTrail (Audit Logs)                      | $9.60                            |
 | **Total**                                        | **$161.60**                      |
+
+---
+
+# 3. Face recognition ML system
+
+# AWS Cost Estimation for Face Recognition ML System
+
+## Overview
+This system ensures **fraud prevention** by verifying **candidate identities** at multiple stages:
+- **During login**: Passport and selfie verification.
+- **Before test starts**: Liveness check.
+- **During the test**: Periodic snapshots for verification.
+
+The solution utilizes **Amazon Rekognition**, **Amazon Textract**, **Amazon S3**, and **Amazon SNS**.
+
+## Estimated Monthly Volume
+| **Category**                   | **Details**                               | **Value**   |
+|--------------------------------|-------------------------------------------|-------------|
+| **Candidates per Month**       | Users logging in for the exam             | **8,000**   |
+| **Images per Candidate (Login)** | Passport + Selfie                        | **2**       |
+| **Images per Candidate (During Test)** | Snapshots for verification (start, mid, end) | **3**       |
+| **Total Images per Candidate** | Sum of above                              | **5**       |
+| **Total Images per Month**     | 8,000 candidates × 5 images/candidate     | **40,000**  |
+
+### Amazon Rekognition Face Match
+**Use Case:**  
+Verifies a user’s selfie against their registered photo during login and periodic monitoring.
+
+**Usage Requirements:**
+- **Pricing:** $0.001 per image ([Amazon Rekognition Pricing](https://aws.amazon.com/rekognition/pricing/))
+
+**Cost Calculation:**
+- **Monthly Cost:** 40,000 images × $0.001/image = **$40.00**
+
+### Amazon Rekognition Face Liveness
+**Use Case:**  
+Detects spoofing attempts by assessing the liveness of the user's face before the test starts.
+
+**Usage Requirements:**
+- **Pricing:** $0.002 per image ([Amazon Rekognition Pricing](https://aws.amazon.com/rekognition/pricing/))
+
+**Cost Calculation:**
+- **Monthly Cost:** 8,000 images × $0.002/image = **$16.00**
+
+### Amazon Textract (Passport Scanning)
+**Use Case:**  
+Extracts text from passports for identity verification during user registration.
+
+**Usage Requirements:**
+- **Pricing:** $0.01 per page ([Amazon Textract Pricing](https://aws.amazon.com/textract/pricing/))
+- **Total Pages Processed:** 8,000 pages per month (one per candidate)
+
+**Cost Calculation:**
+- **Monthly Cost:** 8,000 pages × $0.01/page = **$80.00**
+
+### Amazon Simple Notification Service (SNS)
+**Use Case:**  
+Sends alerts for suspicious activities, such as face mismatches or impersonation attempts.
+
+**Usage Requirements:**
+- **Pricing:** $0.50 per million publish requests ([Amazon SNS Pricing](https://aws.amazon.com/sns/pricing/))
+- **Total Alerts:** 8,000 candidates × 2% = 160 alerts
+
+## **Total Estimated Monthly Cost**
+
+| **Service**                                     | **Estimated Monthly Cost (USD)** |
+|-------------------------------------------------|----------------------------------|
+| **Amazon Rekognition Face Match**               | $40.00                           |
+| **Amazon Rekognition Liveness Detection**       | $16.00                           |
+| **Amazon Textract (Passport Scanning)**         | $80.00                           |
+| **AWS SNS (Alerts & Notifications)**            | $0.00                            |
+| **Amazon S3 (Log Storage Instead of CloudWatch)** | $0.01                            |
+| **Total Estimated Monthly Cost**                | **$136.01**                      |
