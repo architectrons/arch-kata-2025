@@ -5,7 +5,6 @@
 - AI (LLMs like GPT-4, Claude Sonet) evaluates short-answer responses based on predefined metrics.
 - AI assign an initial score and provide explanations.
 - Edge cases (uncertain responses) are flagged for human review.
-- **Expected reduces expert grading time by 50-70%.**
 
 2. Plagiarism & Similarity Detection
 - AI scans responses for copy-paste detection.
@@ -25,7 +24,6 @@
 - AI assigns a preliminary score with a confidence rating.
 - High-confidence cases auto-graded, low-confidence cases flagged for expert review.
 - Experts see AI-generated comments and approve/edit before finalizing.
-- **Expected reduces expert grading time by 50%.**
 
 ### AI in Certification Candidate Authentication
 1. Fraud Prevention & Identity Verification
