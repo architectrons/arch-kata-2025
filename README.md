@@ -21,3 +21,4 @@ Certifiable, Inc. has integrated AI-driven automation into its certification pro
 - [Detailed AI Use Cases](ai_use_cases_details.md)
 - [Quality Attribute Scenarios](quality_attribute_scenarios.md)
 - [ADRs](adrs/)
+- [Infrastructure costs](aws_costs.md)
