@@ -12,7 +12,7 @@ Certifiable, Inc. has integrated AI-driven automation into its certification pro
 ### Key AI-driven enhancements:
 - **Fraud Prevention & Identity Verification** - AI-powered facial recognition validates candidate identity.
 - **Fully Automated AI-Assisted Aptitude Test Grading** – AI grades multiple-choice and short-answer responses autonomously, requiring human intervention only for low-confidence cases.
-- **AI-Powered Architecture Submission Evaluation** – Uses **OCR + NLP** to analyze architectural diagrams and flag uncertain cases for human review.
+- **AI-Powered Architecture Submission Evaluation** – Uses multi modal LLM to analyze architectural diagrams and flag uncertain cases for human review.
 
 ## Content
 - [Business Goals](business_goals.md)
@@ -20,4 +20,5 @@ Certifiable, Inc. has integrated AI-driven automation into its certification pro
 - [Main Use Cases](use_cases.md)
 - [Detailed AI Use Cases](ai_use_cases_details.md)
 - [Quality Attribute Scenarios](quality_attribute_scenarios.md)
+- [ADRs](adrs/)
 - [Business Impact](business_impact.md)
