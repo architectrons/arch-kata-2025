@@ -12,6 +12,7 @@ This document outlines the AI-driven use cases that will be integrated into the 
 | UC-3 | **AI-Assisted Review of Architecture Submissions** | AI pre-processes architecture submissions to highlight key areas for expert review, ensuring faster manual grading. | AI System, Expert Software Architect | C-4, C-5 |
 | UC-4 | **Manual Review of AI-Processed Architecture Submissions** | Experts finalize grading and provide candidate feedback after reviewing AI-processed evaluations. | Expert Software Architect | C-5, C-9 |
 | UC-5 | **AI-Driven Test Performance Analytics** | AI analyzes historical test data to detect problematic questions, identify grading inconsistencies, and suggest content improvements. | AI System, Expert Software Architect | C-3, C-9 |
+| UC-6 | **ML anti-fraud face recognition** | ML system analyse uploaded documents, real time picture of the candidate and real time monitoring | AI System | |
 
 ## AI Use Case Diagrams
 
