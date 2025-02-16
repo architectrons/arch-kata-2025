@@ -3,7 +3,8 @@
 With overseas expansion, Certifiable, Inc. should prepare for approximately 4,000 to 8,000 candidates per month
 Beyond this surge, anticipate a steady increase of about 0.4375% per month, leading to approximately 4,214 candidates per month after one year (based on a 5× initial growth).
 
-## AWS Overall Costs
+## AWS Monthly Costs
+
 | **Feature**                           | **Estimated Cost (USD)** |
 |---------------------------------------|-------------------------|
 | Grade short answers                   | $1,178.80                   |
