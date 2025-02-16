@@ -15,7 +15,9 @@ This document outlines the AI-driven use cases that will be integrated into the 
 
 ## AI Use Case Diagrams
 
-### Candidate Registration
+### Candidate Registration/Login
+[detailed_solution](ml_identity_verification.md)
+
 ```mermaid
 %% AI-Driven Fraud Prevention (Biometric Check on Certification Start)
 graph TD;
@@ -28,8 +30,9 @@ graph TD;
     ManualReview -->|Reject| ExamExit;
     ExamAccess -->|Proceed with Certification| CertificationProcess;
 ```
-
 ### AI in Aptitude Test Grading
+[detailed_solution](ai_short_answers_grading.md)
+
 ```mermaid
 graph TD;
     Candidate -->|Take Aptitude Test| AptitudeTest;
