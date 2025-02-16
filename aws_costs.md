@@ -3,6 +3,14 @@
 With overseas expansion, Certifiable, Inc. should prepare for approximately 4,000 to 8,000 candidates per month
 Beyond this surge, anticipate a steady increase of about 0.4375% per month, leading to approximately 4,214 candidates per month after one year (based on a 5× initial growth).
 
+## AWS Overall Costs
+| **Feature**                           | **Estimated Cost (USD)** |
+|---------------------------------------|-------------------------|
+| Grade short answers                   | $1,178.80                   |
+| Guardrails          | $161.60                 |
+| **Total**                             | **$1,340.40**           |
+
+
 ---
 # 1. Short answers grading
 
@@ -76,3 +84,90 @@ Beyond this surge, anticipate a steady increase of about 0.4375% per month, lead
 - **Amazon Bedrock Pricing:** The Claude 3.5 Sonnet model is priced at **$0.0015 per 1,000 input tokens** and **$0.0075 per 1,000 output tokens** for batch prcessing (50% discount) ([AWS Bedrock Pricing](https://aws.amazon.com/bedrock/pricing/)).
 - **AWS Lambda and API Gateway:** Costs are minimal due to the low execution time and request volume.
 - **CloudWatch Logs:** Costs are based on ingestion and storage rates.
+
+---
+
+# 2. Guardrails costs estimation
+## 1. Ensuring Fair & Unbiased AI Scoring
+
+### Bias Detection in Grading (Amazon SageMaker Clarify)
+**Use Case:** Detect grading inconsistencies across demographics and flag biased responses.
+
+#### Usage Requirements:
+- **SageMaker Clarify Pricing:** $0.42 per hour.
+- Key Estimations:
+	•	Assume 1 batch job per week to analyze bias trends in AI grading.
+	•	Each batch run processes 40,000 responses (160,000 responses / 4 weeks).
+	•	Estimated Compute Time per Batch: 12.5 hours (for feature extraction, fairness metric calculations, and report generation).
+	•	Total per Month: 12.5 hours × 4 weeks = 50 hours/month.
+- **Estimated Usage:** 50 hours per month.
+
+#### Cost Calculation:
+- **Monthly Cost:** 50 hours × $0.42/hour = **$21.00**.
+
+### Content Analysis on Candidate Responses (Amazon Comprehend)
+**Use Case:** Ensure AI does not misinterpret tone or phrasing when grading.
+
+#### Usage Requirements:
+- **Amazon Comprehend Pricing:** $0.0001 per 1,000 characters.
+- **Estimated Characters per Response:** 1,000 characters.
+- **Total Characters Processed Monthly:** 8,000 candidates × 20 responses/candidate × 1,000 characters = 160,000,000 characters.
+
+#### Cost Calculation:
+- **Monthly Cost:** (160,000,000 ÷ 1,000) × $0.0001 = **$16.00**.
+
+---
+
+## 2. AI Drift & Consistency in Grading Over Time
+
+### Response Drift Detection (Amazon Bedrock Model Evaluation)
+**Use Case:** Monitor grading changes over time to prevent inconsistencies.
+
+#### Usage Requirements:
+- **Bedrock Model Evaluation Pricing:** Estimated $10 per evaluation.
+- **Evaluations per Month:** 10 runs.
+
+#### Cost Calculation:
+- **Monthly Cost:** 10 evaluations × $10/evaluation = **$100.00**.
+
+### Scoring Stability Check (Amazon SageMaker Model Monitor)
+**Use Case:** Track grading distribution to prevent unfair fluctuations.
+
+#### Usage Requirements:
+- **SageMaker Model Monitor Pricing:** $0.30 per hour.
+- Key Estimations:
+	•	Assume 1 batch job per week to analyze grading consistency.
+	•	Each batch run processes 40,000 responses (160,000 responses / 4 weeks).
+	•	Estimated Compute Time per Batch: 12.5 hours
+- **Estimated Usage:** 50 hours per month.
+
+#### Cost Calculation:
+- **Monthly Cost:** 50 hours × $0.30/hour = **$15.00**.
+
+---
+
+## 3. AI Explainability & Compliance Guardrails
+
+### AI Grading Audit Logs (AWS CloudTrail)
+**Use Case:** Log all AI grading decisions for auditability.
+
+#### Usage Requirements:
+- **CloudTrail Pricing:** $2.00 per 100,000 events.
+- **Logged Events per Response:** 3 (grading decision, evaluation, audit entry).
+- **Total Events Monthly:** 8,000 candidates × 20 responses/candidate × 3 events/response = 480,000 events.
+
+#### Cost Calculation:
+- **Monthly Cost:** (480,000 ÷ 100,000) × $2.00 = **$9.60**.
+
+---
+
+# Total Estimated Monthly Guardrails Cost
+
+| **Service**                                      | **Estimated Monthly Cost (USD)** |
+|--------------------------------------------------|----------------------------------|
+| Amazon SageMaker Clarify (Bias Detection)        | $21.00                           |
+| Amazon Comprehend (Content Analysis)             | $16.00                           |
+| Amazon Bedrock Model Evaluation (Drift Detection)| $100.00                          |
+| Amazon SageMaker Model Monitor (Stability Check) | $15.00                           |
+| AWS CloudTrail (Audit Logs)                      | $9.60                            |
+| **Total**                                        | **$161.60**                      |
