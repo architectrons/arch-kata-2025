@@ -48,6 +48,7 @@ graph TD;
 ```
 
 ### AI in Architecture Submission Evaluation
+[detailed_solution](ai_architecture_submittion.md)
 ```mermaid
 graph TD;
     Candidate -->|Submit Architecture Solution| ArchitectureSubmission;
