@@ -1,24 +1,24 @@
-# AI Architecture Submittions processing
+# AI Architecture Submissions processing
 
 ```mermaid
 sequenceDiagram
     participant Candidate
-    participant Submittions API
-    participant Submittions DB
+    participant Submissions API
+    participant Submissions DB
     participant Preprocessing Lambda
     participant AI Grading Engine
     participant Expert Architect
     participant Notifications as Notifications Service
     participant Certification DB
 
-    Candidate->>Submittions API: Upload Architecture Submission
-    Submittions API->>Submittions DB: Store Submission Data
-    Submittions DB-->>Preprocessing Lambda: Trigger Processing Event
+    Candidate->>Submissions API: Upload Architecture Submission
+    Submissions API->>Submissions DB: Store Submission Data
+    Submissions DB-->>Preprocessing Lambda: Trigger Processing Event
 
     Preprocessing Lambda->>AI Grading Engine: Extract & Process Submission
-    AI Grading Engine->>Submittions DB: Retrieve Past Submissions (Vector Search)
+    AI Grading Engine->>Submissions DB: Retrieve Past Submissions (Vector Search)
 
-    Submittions DB-->>AI Grading Engine: Return Similar Submissions
+    Submissions DB-->>AI Grading Engine: Return Similar Submissions
     AI Grading Engine->>S3: Store formated prompt
     BackgroundJob-->>S3: Read propmpts to LLM in batch
     BackgroundJob-->>LLM: Run batch inference (Generate Initial Grade & Feedback)
@@ -29,10 +29,10 @@ sequenceDiagram
     AI Grading Engine-->>S3: Read response from LLM
     AI Grading Engine->>Expert Architect: Send for Review & Approval
     Expert Architect->>Expert Architect: Review & Modify if Needed
-    Expert Architect->>Submittions DB: Store Finalized Grade & Feedback
+    Expert Architect->>Submissions DB: Store Finalized Grade & Feedback
 ```
 
-### Process Architecture Submittion Files and store to DB
+### Process Architecture Submission Files and store to DB
 
 Detailed flow for `Preprocessing Lambda` mentioned in general flow
 
@@ -45,7 +45,7 @@ sequenceDiagram
     participant AWS Comprehend
     participant AWS Rekognition
     participant Data Aggregator
-    participant Submittions DB
+    participant Submissions DB
 
     DataIngestion->>AWS Textract: Extract Text from PDF (OCR)
     AWS Textract-->>DataIngestion: Return Extracted Text
@@ -59,7 +59,7 @@ sequenceDiagram
     DataIngestion->>Data Aggregator: Combine Text & Diagram Data
     Data Aggregator-->>DataIngestion: Return Aggregated Analysis
 
-    DataIngestion->>Submittions DB: Store Processed & Structured Submittion Data
+    DataIngestion->>Submissions DB: Store Processed & Structured Submissions Data
 ```
 
 ### RAG workflow
@@ -67,11 +67,11 @@ sequenceDiagram
 ```mermaid
 sequenceDiagram
     participant AI Grading Engine
-    participant Submittions DB as Submittions DB (Vector Search)
+    participant Submissions DB as Submissions DB (Vector Search)
     participant LLm as Claude 3 (AWS Bedrock)
 
-    AI Grading Engine->>Submittions DB: Convert Submission to Vector & Search
-    Submittions DB-->>AI Grading Engine: Return Top N Similar Submissions
+    AI Grading Engine->>Submissions DB: Convert Submission to Vector & Search
+    Submissions DB-->>AI Grading Engine: Return Top N Similar Submissions
     
     AI Grading Engine->>AI Grading Engine: Construct Contextual Prompt
     AI Grading Engine->>LLM: Send Submission + Retrieved Examples
@@ -82,12 +82,12 @@ sequenceDiagram
 
 ```
 Use case: {USE_CASE}
-Candidate's proposed architecture design: {PROCESSED_SUBMITTION}
+Candidate's proposed architecture design: {PROCESSED_SUBMISSION}
 
 [Relevant Past Submissions]
-1. {HIGH_SCORE_SUBMITTION_EXAMPLE}
-2. {LOW_SCORE_SUBMITTION_EXAMPLE}
-3. {MEDIUM_SCORE_SUBMITTION_EXAMPLE}
+1. {HIGH_SCORE_SUBMISSION_EXAMPLE}
+2. {LOW_SCORE_SUBMISSION_EXAMPLE}
+3. {MEDIUM_SCORE_SUBMISSION_EXAMPLE}
 
 [Grading Metrics]
 - Accuracy Criteria: {KNOWLEDGE_BASE_ON_ACCURACY}
@@ -106,22 +106,22 @@ flowchart TD
     E -->|Retrieval Queries| F[Relevant Document Embeddings]
 ```
 
-## Backfill old submittions with vector represenatation
+## Backfill old submissions with vector represenatation
 
 To be used as examples.
 
 ```mermaid
 sequenceDiagram
     participant Batch Process Lambda
-    participant Submittions DB (Old Data)
+    participant Submissions DB (Old Data)
     participant Embeddings Model as AWS Titan Embedding
-    participant Submittions DB (Vector Storage)
+    participant Submissions DB (Vector Storage)
 
-    Batch Process Lambda->>PostgreSQL (Old Data): Fetch Old Submissions without Vectors
-    PostgreSQL (Old Data)-->>Batch Process Lambda: Return Submission Texts
+    Batch Process Lambda->>Submissions DB (Old Data): Fetch Old Submissions without Vectors
+    Submissions DB (Old Data)-->>Batch Process Lambda: Return Submission Texts
 
     Batch Process Lambda->>Embeddings Model: Generate Embeddings
     Embeddings Model-->>Batch Process Lambda: Return Vectors
 
-    Batch Process Lambda->>PostgreSQL (Vector Storage): Store Vector Representations
+    Batch Process Lambda->>Submissions DB: Store Vector Representations
 ```
