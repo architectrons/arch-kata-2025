@@ -36,7 +36,7 @@ sequenceDiagram
 
 Detailed flow for `Preprocessing Lambda` mentioned in general flow
 
-[Data processing AWS Costs](aws_costs.md#submittion-processing)
+[Data processing AWS Costs](aws_costs.md#2-guardrails-costs-estimation)
 
 ```mermaid
 sequenceDiagram
