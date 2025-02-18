@@ -106,7 +106,7 @@ Beyond this surge, anticipate a steady increase of about 0.4375% per month, lead
 
 ---
 
-# 2. Guardrails costs estimation
+# 3. Guardrails costs estimation
 ## 1. Ensuring Fair & Unbiased AI Scoring
 
 ### Bias Detection in Grading (Amazon SageMaker Clarify)
@@ -189,7 +189,7 @@ Beyond this surge, anticipate a steady increase of about 0.4375% per month, lead
 
 ---
 
-# 3. Face recognition ML system
+# 4. Face recognition ML system
 
 # AWS Cost Estimation for Face Recognition ML System
 
