@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0" version="26.0.11" pages="8">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0" version="26.0.11" pages="9">
   <diagram name="C1-Context" id="b0F1jYfrrGQBMrEV4r8v">
     <mxGraphModel dx="1293" dy="1230" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -888,6 +888,148 @@
         </mxCell>
         <mxCell id="msQgaJS499ucXi85Q30n-0" value="NEW" style="dashed=0;html=1;rounded=1;fillColor=light-dark(#FF0A0A,#A091EE);strokeColor=none;fontSize=12;align=center;fontStyle=1;strokeWidth=2;fontColor=#ffffff" parent="FhFCKRtu15PD8wLlBlre-1" vertex="1">
           <mxGeometry x="620" y="1115" width="50" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="C3-AI Certification Maintenance Service Component" id="tWkNB_CBetQTNHHONuLm">
+    <mxGraphModel dx="1426" dy="901" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="Efn9CcqmT7fpA3v-u_0U-0" />
+        <mxCell id="Efn9CcqmT7fpA3v-u_0U-1" parent="Efn9CcqmT7fpA3v-u_0U-0" />
+        <object placeholders="1" c4Name="AI Certification Maintenance Service" c4Type="ContainerScopeBoundary" c4Application="Component" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="Efn9CcqmT7fpA3v-u_0U-7">
+          <mxCell style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="Efn9CcqmT7fpA3v-u_0U-1">
+            <mxGeometry x="130" y="380" width="1130" height="890" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Aptitude Test Maintenance Service" c4Type="Component" c4Technology="Backend" c4Description="Add, remove and modify aptitude test questions" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="Efn9CcqmT7fpA3v-u_0U-12">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="Efn9CcqmT7fpA3v-u_0U-1">
+            <mxGeometry x="210" y="250.00000000000003" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Case Study Maintenance Service" c4Type="Component" c4Technology="Backend" c4Description="Add, remove and modify architectural solution case studies" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="Efn9CcqmT7fpA3v-u_0U-13">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="Efn9CcqmT7fpA3v-u_0U-1">
+            <mxGeometry x="570" y="250.00000000000003" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Aptitude Test DB" c4Type="Container" c4Technology="PostgreSQL v13+, pgvector" c4Description="Stores aptitude tests and vectors" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="Efn9CcqmT7fpA3v-u_0U-14">
+          <mxCell style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1" parent="Efn9CcqmT7fpA3v-u_0U-1">
+            <mxGeometry x="160" y="680.96" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Aptitude Test Analysis Service" c4Type="Component" c4Technology="Backend" c4Description="Analyse aptitude certification test questions" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="Efn9CcqmT7fpA3v-u_0U-15">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="Efn9CcqmT7fpA3v-u_0U-1">
+            <mxGeometry x="930" y="250.00000000000003" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="AI Certification Maintenance Controller" c4Type="Component" c4Technology="API, Orchestrator, txtai" c4Description="Data pipeline and orchestrator" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="Efn9CcqmT7fpA3v-u_0U-26">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="Efn9CcqmT7fpA3v-u_0U-1">
+            <mxGeometry x="570" y="675.96" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="Efn9CcqmT7fpA3v-u_0U-27" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.975;entryY=0.45;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="Efn9CcqmT7fpA3v-u_0U-1" source="Efn9CcqmT7fpA3v-u_0U-26" target="Efn9CcqmT7fpA3v-u_0U-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Efn9CcqmT7fpA3v-u_0U-28" value="Store aptitude test vectors" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Efn9CcqmT7fpA3v-u_0U-27">
+          <mxGeometry x="-0.1849" relative="1" as="geometry">
+            <mxPoint x="-10" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Efn9CcqmT7fpA3v-u_0U-29" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="Efn9CcqmT7fpA3v-u_0U-1" target="Efn9CcqmT7fpA3v-u_0U-26" source="Efn9CcqmT7fpA3v-u_0U-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="520.96" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Efn9CcqmT7fpA3v-u_0U-30" value="Create embeddings for aptitude test" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Efn9CcqmT7fpA3v-u_0U-29">
+          <mxGeometry x="-0.1148" relative="1" as="geometry">
+            <mxPoint x="-3" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Efn9CcqmT7fpA3v-u_0U-31" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="Efn9CcqmT7fpA3v-u_0U-1" source="Efn9CcqmT7fpA3v-u_0U-13" target="Efn9CcqmT7fpA3v-u_0U-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Efn9CcqmT7fpA3v-u_0U-32" value="Create embeddings for case studies" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Efn9CcqmT7fpA3v-u_0U-31">
+          <mxGeometry x="-0.1115" relative="1" as="geometry">
+            <mxPoint x="10" y="-41" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Case Study DB" c4Type="Container" c4Technology="PostgreSQL v13+, pgvector" c4Description="Stores aptitude tests and vectors" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="Efn9CcqmT7fpA3v-u_0U-33">
+          <mxCell style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1" parent="Efn9CcqmT7fpA3v-u_0U-1">
+            <mxGeometry x="160" y="975" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="Efn9CcqmT7fpA3v-u_0U-34" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="Efn9CcqmT7fpA3v-u_0U-1" target="Efn9CcqmT7fpA3v-u_0U-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="694" y="795.96" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4W53R8y2H3TaEQRUb2n7-4" value="Store case study vectors" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Efn9CcqmT7fpA3v-u_0U-34">
+          <mxGeometry x="-0.1093" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Efn9CcqmT7fpA3v-u_0U-37" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="Efn9CcqmT7fpA3v-u_0U-1" source="Efn9CcqmT7fpA3v-u_0U-15" target="Efn9CcqmT7fpA3v-u_0U-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Efn9CcqmT7fpA3v-u_0U-38" value="Analyse historical report" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Efn9CcqmT7fpA3v-u_0U-37">
+          <mxGeometry x="-0.1259" y="-4" relative="1" as="geometry">
+            <mxPoint x="-5" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Efn9CcqmT7fpA3v-u_0U-39" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fillColor=#f8cecc;strokeColor=#b85450;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.machine_learning;" vertex="1" parent="Efn9CcqmT7fpA3v-u_0U-1">
+          <mxGeometry x="780" y="680.96" width="25" height="25" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Name="External LLM API" c4Type="Software System" c4Description="AWS Bedrock (Claude 3.5 Sonnet Model)" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="lRelyGLXRlah9NKX-BBU-0">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="Efn9CcqmT7fpA3v-u_0U-1">
+            <mxGeometry x="1400" y="675.96" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="lRelyGLXRlah9NKX-BBU-5" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="Efn9CcqmT7fpA3v-u_0U-1" source="lRelyGLXRlah9NKX-BBU-3" target="lRelyGLXRlah9NKX-BBU-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lRelyGLXRlah9NKX-BBU-9" value="Report analysis with&amp;nbsp;&lt;div&gt;prompt template&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="lRelyGLXRlah9NKX-BBU-5">
+          <mxGeometry x="0.0667" y="-3" relative="1" as="geometry">
+            <mxPoint y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Prompt Proxy" c4Type="Component" c4Technology="txtai" c4Description="Generates required prompts based on the query" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="lRelyGLXRlah9NKX-BBU-3">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="Efn9CcqmT7fpA3v-u_0U-1">
+            <mxGeometry x="980" y="675.96" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="lRelyGLXRlah9NKX-BBU-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="Efn9CcqmT7fpA3v-u_0U-1" source="Efn9CcqmT7fpA3v-u_0U-26" target="lRelyGLXRlah9NKX-BBU-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lRelyGLXRlah9NKX-BBU-8" value="Report analysis request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="lRelyGLXRlah9NKX-BBU-4">
+          <mxGeometry x="-0.2118" y="1" relative="1" as="geometry">
+            <mxPoint x="13" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Response Validator" c4Type="Component" c4Technology="Guardrails AI" c4Description="Validates responses for hallucination and relevancy" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="lRelyGLXRlah9NKX-BBU-6">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="Efn9CcqmT7fpA3v-u_0U-1">
+            <mxGeometry x="980" y="880" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="lRelyGLXRlah9NKX-BBU-7" value="Validate LLM response" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="Efn9CcqmT7fpA3v-u_0U-1" source="lRelyGLXRlah9NKX-BBU-3" target="lRelyGLXRlah9NKX-BBU-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1100" y="800" as="sourcePoint" />
+            <mxPoint x="1100" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Prompt Proxy" c4Type="Component" c4Technology="txtai" c4Description="Generates required prompts based on the query" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="lRelyGLXRlah9NKX-BBU-11">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="Efn9CcqmT7fpA3v-u_0U-1">
+            <mxGeometry x="980" y="1095" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="lRelyGLXRlah9NKX-BBU-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="Efn9CcqmT7fpA3v-u_0U-1" source="lRelyGLXRlah9NKX-BBU-11" target="lRelyGLXRlah9NKX-BBU-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lRelyGLXRlah9NKX-BBU-13" value="Validate LLM response" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="lRelyGLXRlah9NKX-BBU-12">
+          <mxGeometry x="-0.0105" y="5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
