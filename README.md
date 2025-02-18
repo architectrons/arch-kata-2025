@@ -19,7 +19,7 @@ Certifiable, Inc. has integrated AI-driven automation into its certification pro
 - [Constraints](constraints.md)
 - [Main Use Cases](use_cases.md)
   - [AI Short Asnwers](ai_short_answers_grading.md)
-  - [AI Architecture Submittion](ai_architecture_submittion.md)
+  - [AI Architecture Submission](ai_architecture_submission.md)
   - [ML Identity Verification](ml_identify_verfication.md)
   - [AI Refine Test Questions] TODO
   - [AI Generate Use Cases] TODO
