@@ -10,7 +10,7 @@ Beyond this surge, anticipate a steady increase of about 0.4375% per month, lead
 | Grade short answers                   | $1,178.80                   |
 | Guardrails          | $161.60                 |
 | Face Recognition ML | $136.01 |
-| Submittions Processing | $4,722 |
+| Submissions Processing | $4,722 |
 | **Total**                             | **$6,198.50**           |
 
 
@@ -88,7 +88,7 @@ Beyond this surge, anticipate a steady increase of about 0.4375% per month, lead
 
 ---
 
-# 2. Submittions Processing
+# 2. Submissions Processing
 
 ### Assumptions
 - 8,000 submissions/month
