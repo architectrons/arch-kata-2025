@@ -10,7 +10,8 @@ Beyond this surge, anticipate a steady increase of about 0.4375% per month, lead
 | Grade short answers                   | $1,178.80                   |
 | Guardrails          | $161.60                 |
 | Face Recognition ML | $136.01 |
-| **Total**                             | **$1,476.50**           |
+| Submittions Processing | $4,722 |
+| **Total**                             | **$6,198.50**           |
 
 
 ---
@@ -79,13 +80,29 @@ Beyond this surge, anticipate a steady increase of about 0.4375% per month, lead
 ### Request Requirements:
 - **Requests:** 160,000/month.
 
----
-
 ## Notes:
 - **Amazon OpenSearch Serverless:** Minimum deployment requires **4 OCUs**, leading to a base cost of approximately **$691.20/month** ([AWS OpenSearch Pricing](https://aws.amazon.com/opensearch-service/pricing/)).
 - **Amazon Bedrock Pricing:** The Claude 3.5 Sonnet model is priced at **$0.0015 per 1,000 input tokens** and **$0.0075 per 1,000 output tokens** for batch prcessing (50% discount) ([AWS Bedrock Pricing](https://aws.amazon.com/bedrock/pricing/)).
 - **AWS Lambda and API Gateway:** Costs are minimal due to the low execution time and request volume.
 - **CloudWatch Logs:** Costs are based on ingestion and storage rates.
+
+---
+
+# 2. Submittions Processing
+
+### Assumptions
+- 8,000 submissions/month
+- Each submission = 40 pages (~1,280,000 pages/month)
+- Each submission = 10 diagrams (~80,000 diagrams/month)
+- OCR via Textract, NLP via Comprehend, Diagram Analysis via Rekognition
+
+| **Service**                | **Estimated Cost (Monthly)** |
+|----------------------------|-----------------------------|
+| **Textract (OCR)**         | **$1,920**                  |
+| **Comprehend (NLP)**       | **$2,560**                  |
+| **Rekognition (Diagrams)** | **$160**                    |
+| **Lambda (Processing)**    | **$82**                     |
+| **Total Cost**             | **$4,722 per month**        |
 
 ---
 
