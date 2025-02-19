@@ -1,18 +1,28 @@
 # Architectrons
 
-## Business Problem
-Certifiable, Inc. is facing a **5-10X increase** in certification requests due to **global expansion** and a **21% industry growth projection over the next four years**. The current **manual grading processes** cannot scale to meet demand while maintaining **accuracy and turnaround times**. The company is exploring **Generative AI** to enhance the **efficiency, accuracy, and scalability** of its certification system.
+## AI-Driven Enhancements to Certifiable, Inc.’s Certification System  
 
-# AI-Integrated Certification System Architecture
+Certifiable, Inc. is scaling its certification process to handle a **5-10X increase in candidate volume** while maintaining accuracy, fairness, and efficiency. The introduction of **AI-driven automation** addresses grading bottlenecks, fraud prevention, and quality assurance, ensuring a **highly scalable, cost-effective**, and **trustworthy** certification process.  
 
-## Overview
+To achieve this, we applied **AI architecture patterns** such as **Retrieval-Augmented Generation (RAG)** for accurate grading, **Multi-Modal AI** for architecture submission evaluation, and **Human-in-the-Loop (HITL)** to ensure high-quality decisions where AI confidence is low. AWS services were selected for their **native AI integration, scalability, and security**, allowing seamless deployment of AI models with **cost-efficient inference and governance frameworks**.  
 
-Certifiable, Inc. has integrated AI-driven automation into its certification process to address scalability challenges, reduce operational costs, and improve grading efficiency. By leveraging **Retrieval-Augmented Generation (RAG)** and cloud-based AI inference models, the system enhances the grading of aptitude tests, evaluates architecture submissions, and provides automated feedback without requiring costly model training or fine-tuning. The AI implementation ensures a balance between automation and expert oversight, preserving grading quality while significantly reducing manual effort.
+## Goals of AI Enhancements & Implemented Use Cases  
 
-### Key AI-driven enhancements:
-- **Fraud Prevention & Identity Verification** - AI-powered facial recognition validates candidate identity.
-- **Fully Automated AI-Assisted Aptitude Test Grading** – AI grades short-answer responses autonomously, requiring human intervention only for low-confidence cases.
-- **AI-Powered Architecture Submission Evaluation** – Uses multi modal LLM to analyze architectural diagrams and flag uncertain cases for human review.
+| **Business Goal** | **AI-Driven Enhancement** | **Contribution to Goals** |
+|-------------------|--------------------------|--------------------------|
+| **Scalability** – Handle 10X growth in certifications | **Bedrock as AI Gateway** for **LLM-powered grading (Claude 3.5 Sonnet)** | **Automates short-answer grading**, reducing reliance on human graders |
+| **Accuracy & Trust** – Guarantee fair and unbiased grading | **Bedrock Guardrails + SageMaker Clarify** | **Bias detection & evaluation guardrails** prevent hallucinations and grading inconsistencies |
+| **Expert Oversight & Quality Control** | **Human-in-the-Loop (HITL) Pattern** | **AI flags low-confidence cases for expert validation**, maintaining credibility |
+| **Fraud Prevention** – Secure identity verification | **AWS Rekognition for facial matching** | **Prevents impersonation & ensures candidate integrity** |
+| **Efficiency & Speed** – Reduce grading turnaround from 1 week to hours | **RAG-based feedback generation** | **Retrieves past graded responses for comparison**, ensuring **consistency and explainability** |
+| **Reducing Operational Costs** | **On-demand AI inference (Bedrock, Lambda)** | **Eliminates expensive fine-tuning**, using **prompt engineering & retrieval-based models** |
+
+## How AI Patterns Enable This Design  
+1. **AI Gateway Pattern (AWS Bedrock)** – Unified access to **Claude 3.5 Sonnet**, ensuring **flexibility and cost control** without vendor lock-in.  
+2. **Guardrails Framework (Bedrock Guardrails + SageMaker Clarify)** – **Bias detection, model explainability, and hallucination prevention** ensure compliance and **certification integrity**.  
+3. **Retrieval-Augmented Generation (RAG) Pattern (PostgreSQL + pgvector)** – AI references **past grading decisions** to **reduce inconsistencies and improve feedback accuracy**.  
+4. **Multi-Modal AI (AWS Textract + Vision AI)** – Extracts **diagrams, text, and annotations** from architectural submissions for **automated evaluation**.  
+5. **Human-in-the-Loop (HITL) Pattern** – AI flags uncertain cases, ensuring **expert validation** before final grading, balancing **automation with oversight**.  
 
 ## Content
 - [Business Goals](business_goals.md)
