@@ -25,4 +25,5 @@ Certifiable, Inc. has integrated AI-driven automation into its certification pro
   - [AI Generate Use Cases] TODO
 - [Quality Attribute Scenarios](quality_attribute_scenarios.md)
 - [ADRs](adrs/)
+- [AI Guardrails: Accuracy and Relevance](ai_guardrails.md)
 - [Infrastructure costs](aws_costs.md)
