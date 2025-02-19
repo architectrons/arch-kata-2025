@@ -2,7 +2,7 @@
 
 This diagram represents the high-level architecture of an aptitude test system. It outlines the key containers and their interactions.
 
-![Aptitude Test Container](C4/images/aptitude-test-container.drawio.svg)
+![Aptitude Test Container](/C4/images/aptitude-test-container.drawio.svg)
 
 The main goal of this component and the revised architecture is to pregrade the short answer questions in addition to autograding the multiple choice questions. The key component in this architecture is the `AI Short Answer Grade Service` which acts as an orchestrator for the pregrading process. 
 
