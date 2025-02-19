@@ -951,7 +951,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="C3 - Architecture Solution Test Container Components_v2" id="5LUEnbry3F3uKk5dU4nm">
-    <mxGraphModel dx="2194" dy="1386" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="ltHyz5LllkVkpFs6ROQg-0" />
         <mxCell id="ltHyz5LllkVkpFs6ROQg-1" parent="ltHyz5LllkVkpFs6ROQg-0" />
