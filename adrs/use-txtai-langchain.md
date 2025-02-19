@@ -1,4 +1,4 @@
-# ADR for Technology Choices: txtai or LangChain for RAG implementation
+# Use txtai or LangChain for RAG implementation
 
 ## Status
 Proposed
