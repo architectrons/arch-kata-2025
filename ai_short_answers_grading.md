@@ -5,8 +5,8 @@ To effectively grade short-answer responses in a software architecture certifica
 This approach enhances the accuracy of evaluations and ensures personalized feedback.
 
 ## Related ADRs
-- [use instrctor adr](adrs/use_instructor.md)
-- [use_aws_cloud](adrs/use_aws_cloud.md)
+- [use instrctor adr](adrs/ADR001-use-instructor.md)
+- [use_aws_cloud](adrs/ADR004-use-aws-cloud.md)
 
 ```mermaid
 sequenceDiagram
