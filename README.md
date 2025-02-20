@@ -26,6 +26,7 @@ To achieve this, we applied **AI architecture patterns** such as **Retrieval-Aug
 
 ## Content
 - [Business Goals](business_goals.md)
+- [C4 Model](C4/)
 - [Constraints](constraints.md)
 - [Main Use Cases](use_cases.md)
   - [AI Short Asnwers](ai_short_answers_grading.md)
